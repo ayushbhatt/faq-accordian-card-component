@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/* font-family: 'Kumbh Sans', sans-serif; */
+
+.main-card{
+    height:30rem;
+    width:55rem;
+    background-color:white;
+    border-radius: 1rem;
+    display:flex;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.illustrations-area{
+    width:27rem;
+    overflow: hidden;
+}
+
+.illustration{
+    display:flex;
+    position: relative;
+}
+
+.shadow-illustration{
+    right: 35.5rem;
+    bottom: 18rem;
+    position: relative;
+}
+
+.woman-illustration{
+    left:-4.6rem;
+    bottom:33rem;
+    position:absolute;
+}
+
+.accordian-info-area{
+    margin:3rem;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
