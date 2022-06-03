@@ -35,23 +35,29 @@
 
 .accordian-info-area{
     margin:3rem;
+    width:23rem;
 }
 
 .accordion {
-    background-color: #eee;
+    background-color: white;
     color: #444;
     cursor: pointer;
     padding: 18px;
+    padding-left:0;
     width: 100%;
     text-align: left;
     border: none;
     outline: none;
-    transition: 0.4s;
+    background-image: url(../assets/icon-arrow-down.svg);
+    background-position: 22rem 1.3rem;
+    background-repeat: no-repeat;
+    transition: max-height 0.4s ease; /* not working */
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .accordion:hover {
-    background-color: #ccc;
+    /* background-color: #ccc; */
+    color: hsl(14, 88%, 65%);
   }
   
   /* Style the accordion panel. Note: hidden by default */
@@ -60,4 +66,5 @@
     background-color: white;
     display: none;
     overflow: hidden;
+    transition: 0.4s ease; /* not working */
   }
