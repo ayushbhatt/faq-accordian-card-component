@@ -39,14 +39,17 @@
 }
 
 .accordion {
+    font-size:1rem;
     background-color: white;
-    color: #444;
+    color: hsl(238, 29%, 16%);
     cursor: pointer;
     padding: 18px;
     padding-left:0;
+    
     width: 100%;
     text-align: left;
     border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.4);
     outline: none;
     background-image: url(../assets/icon-arrow-down.svg);
     background-position: 22rem 1.3rem;
@@ -55,14 +58,19 @@
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .accordion:hover {
+  /* .active, .accordion:hover { */
+.accordion:hover {
     /* background-color: #ccc; */
     color: hsl(14, 88%, 65%);
   }
   
+.active{
+    font-weight:bold;
+}
+
   /* Style the accordion panel. Note: hidden by default */
   .panel {
-    padding: 0 18px;
+    padding: 0;
     background-color: white;
     display: none;
     overflow: hidden;
